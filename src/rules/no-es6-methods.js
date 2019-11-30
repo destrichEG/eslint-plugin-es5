@@ -15,17 +15,31 @@ module.exports = {
           const functionName = node.callee.property.name;
 
           const es6ArrayFunctions = [
-            'find',
+            // 'find',
             'findIndex',
             'copyWithin',
             'values',
-            'fill'
+            'fill',
+            'entries',
+            'flat',
+            'flatMap',
+            'includes',
+            // 'keys'?
+
           ];
           const es6StringFunctions = [
             'startsWith',
             'endsWith',
             'includes',
-            'repeat'
+            'repeat',
+            'fromCodePoint',
+            'codePointAt',
+            'matchAll',
+            'normalize',
+            'padEnd',
+            'padStart',
+            'trimEnd',
+            'trimStart',
           ];
 
           const es6Functions = [].concat(
