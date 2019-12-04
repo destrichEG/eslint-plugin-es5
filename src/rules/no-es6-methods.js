@@ -14,8 +14,9 @@ module.exports = {
         if(node.callee && node.callee.property && objectExceptions.indexOf(node.callee.object.name) === -1) {
           const functionName = node.callee.property.name;
 
+          // 'find',
+          // 'keys'?
           const es6ArrayFunctions = [
-            // 'find',
             'findIndex',
             'copyWithin',
             'values',
@@ -24,8 +25,7 @@ module.exports = {
             'flat',
             'flatMap',
             'includes',
-            // 'keys'?
-
+            
           ];
           const es6StringFunctions = [
             'startsWith',
